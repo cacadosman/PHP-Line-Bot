@@ -2,16 +2,16 @@
 
 namespace App\LineBot;
 
-use App\LineBot\Functions;
-use App\Controllers\EventsController;
+use App\LineBot\Methods\Event;
+use App\MainEvent;
 
-class Bot extends Functions{
+class Bot extends Core{
 
     public function index(){
         foreach($this->EventsHandler() as $event){
-            $Events = new EventsController();
-
-            switch ($this->botEventType($event)) {
+            $Events = new MainEvent();
+      
+            switch (Event::type($event)) {
                 case 'message':
                     $Events->message($event);
                     break;
@@ -28,7 +28,7 @@ class Bot extends Functions{
                     $Events->leave($event);
                     break;
             }
-        
+      
         }
     }
 

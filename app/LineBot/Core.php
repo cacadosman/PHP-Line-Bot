@@ -6,7 +6,7 @@ use \LINE\LINEBot\SignatureValidator as SignatureValidator;
 
 class Core{
     public $request;
-    public $bot;
+    public static $bot;
     public $httpClient;
 
     public function __construct(){
@@ -26,7 +26,7 @@ class Core{
 
         /* Initialize bot*/
         $this->httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($_ENV['CHANNEL_ACCESS_TOKEN']);
-        $this->bot  = new \LINE\LINEBot($this->httpClient, ['channelSecret' => $_ENV['CHANNEL_SECRET']]);
+        self::$bot  = new \LINE\LINEBot($this->httpClient, ['channelSecret' => $_ENV['CHANNEL_SECRET']]);
     }
 
     public function EventsHandler(){

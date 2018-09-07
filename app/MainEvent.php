@@ -1,17 +1,21 @@
 <?php
 
-  namespace App\Controllers;
+  namespace App;
 
-  use App\LineBot\Functions;
+  use App\LineBot\Methods\Event;
+  use App\LineBot\Methods\Source;
+  use App\LineBot\Methods\Message;
+  use App\LineBot\Methods\Action;
   use App\Model\User;
 
   /* Line BOT Examples */
-  class EventsController extends Functions{
+  class MainEvent{
       
     public function message($event){
-      if($this->botEventMessageType($event) == "text"){
+
+      if(Message::type($event) == "text"){
         // Reply
-        $this->botReplyText($event,$this->botEventMessageText($event));
+        Action::replyText($event,Message::text($event));
       }
     }
 
