@@ -6,6 +6,7 @@
   use App\LineBot\Methods\Source;
   use App\LineBot\Methods\Message;
   use App\LineBot\Methods\Action;
+  use App\LineBot\Methods\Template;
   use App\Model\User;
 
   /* Line BOT Examples */
