@@ -1,0 +1,22 @@
+{
+    "name": "cacadosman/php-line-bot",
+    "description": "Simple Line Bot Framework based on PHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "cacadosman",
+            "email": "wetmanz23@gmail.com"
+        }
+    ],
+    "require": {
+        "linecorp/line-bot-sdk": "^3.8",
+        "illuminate/database": "^5.8",
+        "vlucas/phpdotenv": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app",
+            "Lib\\": "lib"
+        }
+    }
+}
