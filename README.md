@@ -1,4 +1,4 @@
-# PHP-Line-Bot 2.0
+# PHP-Line-Bot 3.0
 Simple Line Bot Framework based on PHP
 
 App file is on app folder.
