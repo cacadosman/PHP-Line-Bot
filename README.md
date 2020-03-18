@@ -1,7 +1,7 @@
 # PHP-Line-Bot 2.0
 Simple Line Bot Framework based on PHP
 
-Main php file is on app/Application.php
+App file is on app folder.
 
 **Changelogs 2.0 :**
 - Change directory structure
@@ -9,5 +9,10 @@ Main php file is on app/Application.php
 - Remove useless and deprecated methods
 - Using Query Builder instead Eloquent
 - Add Service and Repository Layer
+- Bugs improvement
+- Add more bugs to be fixed later
+
+**Changelogs 3.0 :**
+- Change application structure
 - Bugs improvement
 - Add more bugs to be fixed later
