@@ -45,7 +45,7 @@
         'channelSecret' => $channelSecret
     ]);
 
-    $signature = getallheaders()["X-Line-Signature"];
+    $signature = getallheaders()["x-line-signature"];
 
     if (empty($signature))
     {
