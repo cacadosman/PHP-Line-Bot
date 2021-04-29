@@ -10,7 +10,7 @@
     ],
     "require": {
         "linecorp/line-bot-sdk": "^3.8",
-        "illuminate/database": "^5.8",
+        "illuminate/database": "^6.20",
         "vlucas/phpdotenv": "^3.3"
     },
     "autoload": {
